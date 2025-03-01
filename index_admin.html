@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reserva de Espacios</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Reserva de Espacios</h1>
+    <form>
+    <label>Nombre: <input type="text" id="nombre"></label><br>
+    <label>Fecha: <input type="date" id="fecha"></label><br>
+    
+        <label for="opciones">Elige una sala:</label>
+        <select id="opciones" name="opciones">
+            <option value="sala1">Sala 1</option>
+            <option value="sala2">Sala 2</option>
+            <option value="sala3">Sala 3</option>
+        </select>
+    <button onclick="reservar()">Reservar</button>
+    </form>
+</body>
+</html>

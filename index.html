@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reserva de Espacios</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a nuestra empresa </h1>
+        <div class="logo-container">
+        <img src="static/logo.png" alt="logo.png">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#salas">Salas</a></li>
+            <li><a href="#auditorios">Auditorios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    
+    <br>
+    <section id="#about">
+        <h2>Quienes Somos</h2>
+    <p> Bienvenido a nuestra empresa dedicada a ofrecerte las mejores
+        salas y auditorios para reuniones y eventos, deslumbra a tu jefe o tus empleados destacando
+        en las reuniones
+    </p><br>
+</section>
+    <main>
+        <section id="#salas">
+            <h2>Salas</h2>
+            <div class="salas-container">
+            <!--tarjeta 1-->
+            <div class="service-card">
+                <img src="static/sala1.png" alt="sala 1.png">
+                <h3>SALA 1</h3>
+                <p>Sala para reuniones basica con capacidad para 10 personas.</p>
+                <button >Reservar</button>
+              </div>   
+              <!--tarjeta 2-->
+              <div class="service-card">
+                <img src="static/sala 2.png" alt="sala 2.png">
+                <h3>SALA 2</h3>
+                <p>Sala para reuniones con buena vista capacidad para 20 personas.</p>
+                <button >Reservar</button>
+              </div>   
+              <!--tarjeta 3-->
+              <div class="service-card">
+                <img src="static/sala3.png" alt="sala3.png">
+                <h3>SALA 3</h3>
+                <p>Sala para reuniones con buena vista capacidad para 25 personas.</p>
+                <button >Reservar</button>
+              </div>   
+            </div>
+        </section>
+        <section id="#auditorios">
+            <h2>AUDITORIOS</h2>
+            <div class="salas-container">
+            <!--tarjeta 1-->
+            <div class="service-card">
+                <img src="static/auditorio1.png" alt="auditorio1.png">
+                <h3>Auditori 1</h3>
+                <p>Auditorio para para grandes reuniones o eventos con capacidad para 450 personas.</p>
+                <button >Reservar</button>
+              </div>   
+              <!--tarjeta 2-->
+              <div class="service-card">
+                <img src="static/auditorio2.png" alt="auditorio2.png">
+                <h3>Auditorio 2</h3>
+                <p>Auditorio para grandes reuniones con buena vista capacidad para 250 personas.</p>
+                <button >Reservar</button>
+              </div>   
+              <!--tarjeta 3-->
+              <div class="service-card">
+                <img src="static/auditorio3.png" alt="auditorio3.png">
+                <h3>Auditorio 3</h3>
+                <p>Sala para reuniones o eventos con  capacidad para 500 personas.</p>
+                <button >Reservar</button>
+              </div>   
+            </div>
+ </section>
+    <h1>Reserva de Salas y Auditorios</h1><br>
+    <form>
+    <br><label>Nombre: <input type="text" id="nombre"></label><br>
+    <label>Fecha: <input type="date" id="fecha"></label><br>
+    
+        <label for="opciones">Elige una sala o Audiorio:</label>
+        <select id="opciones" name="opciones">
+            <option value="sala1">Sala 1</option>
+            <option value="sala2">Sala 2</option>
+            <option value="sala3">Sala 3</option>
+            <option value="auditorio1">Auditorio 1</option>
+            <option value="auditorio2">Auditorio 2</option>
+            <option value="auditorio3">Auditorio 3</option>
+        </select>
+    <button onclick="reservar()">Reservar</button>
+    <button onclick="consultar()">Consultar</button>
+    </form>
+</main>
+<footer>
+    <section id="contact">
+    <h3>Contactanos</h3> 
+    <p>dfcalderon@gmail.com</p>
+    <p>Copyright 2025</p>
+</section>
+</footer>
+</body>
+</html>
