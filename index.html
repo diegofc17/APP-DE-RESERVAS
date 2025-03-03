@@ -3,7 +3,6 @@
 <head>
     <title>Reserva de Espacios</title>
     <link rel="stylesheet" type="text/css" href="static/styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -22,7 +21,7 @@
       </header>
     
     <br>
-    <section id="#about">
+    <section id="about">
         <h2>Quienes Somos</h2>
     <p> Bienvenido a nuestra empresa dedicada a ofrecerte las mejores
         salas y auditorios para reuniones y eventos, deslumbra a tu jefe o tus empleados destacando
@@ -30,7 +29,7 @@
     </p><br>
 </section>
     <main>
-        <section id="#salas">
+        <section id="salas">
             <h2>Salas</h2>
             <div class="salas-container">
             <!--tarjeta 1-->
@@ -56,13 +55,13 @@
               </div>   
             </div>
         </section>
-        <section id="#auditorios">
+        <section id="auditorios">
             <h2>AUDITORIOS</h2>
             <div class="salas-container">
             <!--tarjeta 1-->
             <div class="service-card">
                 <img src="static/auditorio1.png" alt="auditorio1.png">
-                <h3>Auditori 1</h3>
+                <h3>Auditorio 1</h3>
                 <p>Auditorio para para grandes reuniones o eventos con capacidad para 450 personas.</p>
                 <button >Reservar</button>
               </div>   
@@ -83,12 +82,12 @@
             </div>
  </section>
     <h1>Reserva de Salas y Auditorios</h1><br>
-    <form>
+    <form id="registroForm">
     <br><label>Nombre: <input type="text" id="nombre"></label><br>
     <label>Fecha: <input type="date" id="fecha"></label><br>
     
-        <label for="opciones">Elige una sala o Audiorio:</label>
-        <select id="opciones" name="opciones">
+        <label for="espacios">Elige una sala o Auditorio:</label>
+        <select id="espacios" name="espacios">
             <option value="sala1">Sala 1</option>
             <option value="sala2">Sala 2</option>
             <option value="sala3">Sala 3</option>
@@ -96,9 +95,10 @@
             <option value="auditorio2">Auditorio 2</option>
             <option value="auditorio3">Auditorio 3</option>
         </select>
-    <button onclick="reservar()">Reservar</button>
-    <button onclick="consultar()">Consultar</button>
+    <button type="submit">Reservar</button>
+    <button type="button" onclick="consultar()">Consultar</button>
     </form>
+    <div id="datosRegistrados"></div>
 </main>
 <footer>
     <section id="contact">
@@ -107,5 +107,6 @@
     <p>Copyright 2025</p>
 </section>
 </footer>
+<script src="static/script.js"></script>
 </body>
 </html>
